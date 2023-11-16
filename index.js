@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 443;
+const port = 8080;
 var exec = require('child_process').exec;
 
 app.get('/', (req, res) => {
