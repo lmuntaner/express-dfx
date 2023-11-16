@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8080;
 var exec = require('child_process').exec;
 
 app.get('/', (req, res) => {
@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
   })
 })
 
-app.listen("0.0.0.0:8000", () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Example app listening on port ${port}`)
 })
