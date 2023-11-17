@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   exec("dfx canister --network http://localhost:8080 call qsgjb-riaaa-aaaaa-aaaga-cai get_stats", (err, stdout, stderr) => {
     console.log(stdout);
     console.log(stderr)
-    res.send("hello world");
+    res.send(stdout);
   })
 })
 
